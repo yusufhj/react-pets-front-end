@@ -48,13 +48,13 @@ export const updatePet = async (formData, petId) => {
 
 export const deletePet = async (petId) => {
     try {
-      const res = await fetch(`${BASE_URL}/${petId}`, {
+      const deletedPet = await fetch(`${BASE_URL}/${petId}`, {
         method: 'DELETE',
         headers: {
             'Content-Type': 'application/json',
         }
       });
-      return await res.json();
+      return deletedPet;
     } catch (err) {
       console.log(err);
     }
