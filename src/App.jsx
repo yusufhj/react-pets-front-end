@@ -1,3 +1,4 @@
+import './App.css';
 import { useState, useEffect } from 'react';
 // services
 import * as petService from './services/petService';
