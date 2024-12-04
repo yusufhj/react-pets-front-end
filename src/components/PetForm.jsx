@@ -21,7 +21,8 @@ const PetForm = (props) => {
   const handleSubmitForm = (evt) => {
     evt.preventDefault();
     if (props.selectedPet) {
-        props.handleUpdatePet(formData, props.selectedPet._id);
+        // props.handleUpdatePet(formData, props.selectedPet._id);
+        props.handleUpdatePet(formData, props.selectedPet.id);
     } else {
         props.handleAddPet(formData);
     }

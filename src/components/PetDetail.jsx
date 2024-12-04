@@ -19,7 +19,8 @@ const PetDetail = (props) => {
                 <button onClick={() => props.handleFormView(props.selectedPet)}>
                     Edit
                 </button>
-                <button onClick={() => props.handleRemovePet(props.selectedPet._id)}>
+                {/* <button onClick={() => props.handleRemovePet(props.selectedPet._id)}> */}
+                <button onClick={() => props.handleRemovePet(props.selectedPet.id)}>
                     Delete
                 </button>
             </div>
